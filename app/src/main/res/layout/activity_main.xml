@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorDarkAccent">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="220dp"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/musicnote"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"/>
+
+    <EditText
+        android:id="@+id/SongName"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text=""
+        android:textSize="15sp"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/SongArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text=""
+        android:textSize="15sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/SongAlbum"
+        android:layout_alignLeft="@+id/SongAlbum"
+        android:layout_alignStart="@+id/SongAlbum"
+        android:layout_alignRight="@+id/SongAlbum"
+        android:layout_alignEnd="@+id/SongAlbum"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/SongAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text=""
+        android:textSize="15sp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/SongName"
+        android:layout_alignLeft="@+id/SongName"
+        android:layout_alignStart="@+id/SongName"
+        android:layout_alignRight="@+id/SongName"
+        android:layout_alignEnd="@+id/SongName"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="150sp"
+        android:layout_height="20sp"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textAlignment="center"
+        android:text="Title" />
+    <TextView
+        android:id="@+id/Artist"
+        android:layout_width="150sp"
+        android:layout_height="20sp"
+        android:layout_marginTop="11dp"
+        android:textAlignment="center"
+        android:text="Artist"
+        android:layout_below="@+id/SongName"
+        android:layout_alignLeft="@+id/Title"
+        android:layout_alignStart="@+id/Title" />
+    <TextView
+        android:id="@+id/Album"
+        android:layout_width="150sp"
+        android:layout_height="20sp"
+        android:layout_marginTop="11dp"
+        android:textAlignment="center"
+        android:text="Album"
+        android:layout_below="@+id/SongAlbum"
+        android:layout_alignLeft="@+id/Artist"
+        android:layout_alignStart="@+id/Artist" />
+
+</RelativeLayout>
